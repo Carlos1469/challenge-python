@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>igs</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 50px;
+            font-size: 50pt;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>{{ kata }}</p> 
+    {% for i in data %}
+        {% if i == 1 %}
+        <p style=" text-align: center ; color: black; background-color: yellow;width: 100px; height: 100px; gap: 10px; " >1</p>
+        {% elif i == 2 %}
+        <p style=" text-align: center ; color: black; background-color: green ;width: 100px; height: 100px; gap: 10px; " >2</p>
+        {% elif i == 3 %}
+        <p style=" text-align: center ; color: black; background-color: cyan ;width: 100px; height: 100px; gap: 10px;"  >3</p>
+        {% else %}
+        <p style=" text-align: center ; color: black; background-color: red ;width: 100px;  height: 100px; gap: 10px;" >4</p>
+        {% endif %}
+    {% endfor %}
+        
+</body>
+</html>
